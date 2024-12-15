@@ -11,16 +11,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue, // Set the color of AppBar
-        title: Text("show app name"),
+        title: const Text("Show App Name"),
       ),
       body: Center(
         child: Container(
-          child: Text(
-              "I am $days going and $name and $isMale"), // Corrected text from "i a going" to "I am going"
+          child: Text("I am $days going and $name and $isMale"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
